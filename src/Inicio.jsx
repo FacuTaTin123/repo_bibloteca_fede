@@ -7,7 +7,8 @@ export default function Inicio() {
     { id: 1, titulo: "1984", categoria: "Ficción" },
     { id: 2, titulo: "Sapiens", categoria: "No ficción" },
     { id: 3, titulo: "Un mundo feliz", categoria: "Ficción" },
-    { id: 4, titulo: "Una breve historia del tiempo", categoria: "No ficción" }
+    { id: 4, titulo: "Una breve historia del tiempo", categoria: "No ficción" },
+    { id: 5, titulo: 'a ver si anda bien esto', categoria: 'No ficción' }
   ];
 
   return (
@@ -27,7 +28,8 @@ export default function Inicio() {
         </ul>
       </nav>
 
-      <Outlet />
+            <Outlet context={{ libros: librosIniciales }} />
+
     </>
   )
 }
